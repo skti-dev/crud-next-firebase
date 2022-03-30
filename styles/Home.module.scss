@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  input, textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, .137);
+    border-radius: .3rem;
+    margin: .5rem 0;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  form {
+    width: 500px;
+    margin-right: 1rem;
+    text-align: center;
+    
+    button {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid rgba(0, 0, 0, .137);
+      border-radius: .3rem;
+      margin: .5rem 0;
+      background-color: #00BCD4;
+      color: #FFF;
+      font-weight: bold;
+      cursor: pointer;
+      transition: filter 200ms;
+
+      &:hover {
+        filter: brightness(.9);
+      }
+    }
+  }
+
+  .contacts {
+    width: 500px;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, .137);
+    height: 500px;
+    text-align: center;
+    border-radius: .8rem;
+    margin-left: 5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .card {
+      text-align: left;
+      border: 1px solid rgba(0, 0, 0, .137);
+      border-radius: .5rem;
+      max-height: 200px;
+      box-sizing: content-box;
+      margin-bottom: .5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: .1rem 1rem;
+        margin: .5rem 0;
+      }
+
+      .boxCard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          color: red;
+          cursor: pointer;
+          margin-right: .5rem;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .boxInfos {
+        padding: .5rem;
+        font-size: .9em;
+        p {
+          margin: 0 0 .2rem 0;
+        }
+      }
+    }
+  }
+}
